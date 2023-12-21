@@ -1,0 +1,8 @@
+{
+  "name": "CFML Plugin",
+  "id": "cfml",
+  "aspects": [
+    "org.glowroot.agent.plugin.cfml.CfmlInvokeAspect",
+    "org.glowroot.agent.plugin.cfml.CfmlInvokeUDFAspect"
+  ]
+}
