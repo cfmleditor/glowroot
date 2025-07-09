@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.glowroot</groupId>
         <artifactId>glowroot-parent</artifactId>
-        <version>0.14.3-SNAPSHOT</version>
+        <version>0.14.5-beta.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>glowroot-central</artifactId>
@@ -91,19 +91,19 @@
         <dependency>
             <groupId>org.infinispan</groupId>
             <artifactId>infinispan-core</artifactId>
-            <version>15.0.11.Final</version>
+            <version>15.2.4.Final</version>
         </dependency>
         <dependency>
             <groupId>org.infinispan</groupId>
             <artifactId>infinispan-component-annotations</artifactId>
-            <version>15.0.11.Final</version>
+            <version>15.2.4.Final</version>
             <scope>compile</scope>
         </dependency>
         <!-- jgroups-kubernetes specifies that it requires 4.2.x -->
         <dependency>
             <groupId>org.jgroups</groupId>
             <artifactId>jgroups</artifactId>
-            <version>5.3.10.Final</version>
+            <version>5.4.5.Final</version>
         </dependency>
         <dependency>
             <groupId>jakarta.servlet</groupId>
@@ -170,12 +170,12 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>2.0.16</version>
+            <version>2.0.17</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>jul-to-slf4j</artifactId>
-            <version>2.0.16</version>
+            <version>2.0.17</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -196,7 +196,7 @@
             <!-- this is to resolve maven enforcer RequireUpperBoundDeps error -->
             <groupId>net.bytebuddy</groupId>
             <artifactId>byte-buddy</artifactId>
-            <version>1.15.10</version>
+            <version>1.17.5</version>
         </dependency>
         <dependency>
             <!-- this is to resolve maven enforcer RequireUpperBoundDeps error -->
@@ -250,19 +250,19 @@
         <dependency>
             <groupId>org.testcontainers</groupId>
             <artifactId>testcontainers</artifactId>
-            <version>1.19.7</version>
+            <version>1.21.1</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.testcontainers</groupId>
             <artifactId>cassandra</artifactId>
-            <version>1.19.7</version>
+            <version>1.21.1</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.testcontainers</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>1.19.7</version>
+            <version>1.21.1</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -384,7 +384,7 @@
             <plugin>
                 <groupId>de.dentrassi.maven</groupId>
                 <artifactId>rpm</artifactId>
-                <version>1.8.0</version>
+                <version>1.12.0</version>
                 <configuration>
                     <skipSigning>true</skipSigning>
                 </configuration>
